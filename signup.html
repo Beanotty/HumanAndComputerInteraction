@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- header dan navbar -->
+    <header class="header">
+        <a href="home.html"><img src="Assets/logo.png" alt="logo" class="logo"></a>
+            <nav class="navbar">
+                <a href="home.html">Home</a> 
+                <a href="game.html">Game</a>
+                <a href="town.html">Town</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="support.html">Support</a>
+            </nav>
+        </header>
+        <div class="signup_container">
+            <div class="signup_form" id="signup_form">
+                <h1>Sign Up Now!</h1>
+                <form action="" id="form">
+                <p >Email</p>
+                <input type="email" class="input_box" id="email" placeholder="Your Email">
+                <p>Password</p>
+                <input type="password" class="input_box" id="password" placeholder="Your Password">
+                <p>Re-Enter Password</p>
+                <input type="password" class="input_box" id="passwordVal" placeholder="Confirm Password">
+                <p>Age</p>
+                <input type="text" class="input_box" id="age" placeholder="Your Age">
+
+
+                <legend class="gender_legend">Choose your gender:</legend>
+                      <label for="male" class="gender_label">Male</label>
+                      <input type="radio" name="gender" class="gender" id="male" value="male" >
+                      <label for="female" class="gender_label">Female</label>
+                      <input type="radio" name="gender" class="gender" id="female" value="female">
+                      
+                <p><span><input type="checkbox" class="signup_form_checkbox" id="terms"></span>I agree to the terms and conditions</p>
+                <p id="error_msg"> </p>
+                <input type="submit" class="signup_form_btn" id="submit_btn" value="Sign Up">
+                <hr>
+                <p>Already have an account? <a href="#">Log In</a></p>
+                </form>
+            </div>
+        </div>
+        <script src="validation.js"></script>
+</body>
+</html>

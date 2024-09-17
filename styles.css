@@ -1,0 +1,570 @@
+@import url('https://fonts.cdnfonts.com/css/monster-hunter');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HOME HTML */
+
+/* header paling atas yang jadi backgrounds */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* isi dari navbar */
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    margin-left: 40px;
+}
+/* isi navbar for background */
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 3ms;
+}
+/* untuk ngasih garis di bawah */
+.navbar a:hover::before{
+    width: 100%;
+}
+
+/* logo kiri atas */
+.logo{
+    width: 20px;
+}
+ /* container untuk video dan else */
+.video_home{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* div logo tengah diatas button */
+.vid_homelog{
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    justify-content: center;
+    top: 45%; 
+}
+
+/* untuk ukuran video ditengah */
+.video_logo{
+    width: 10%; 
+}
+
+/* The actual video */
+.video_background{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 3px;   
+}
+
+/* edit sourcenya*/
+.video_background source{
+    display: block;
+}
+
+/* container untuk button tengah */
+.vid_butt_cunt{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 67%;
+    z-index: 1;
+    width: 100%;
+}
+
+/* the actual button */
+.video_button{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 550;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    background:#fff;
+    border: 0;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.5s ease; 
+}
+
+/* untuk trasnformasi saat hover */
+.video_button:hover{
+    transform: scale(1.4);
+    background-color: black;
+    color: #fff;
+}
+
+.story_home{
+    background-image : linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8) ), url("Assets/gameplay_bg.png");
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+    text-align: center;
+}
+
+.story_logo img{
+    width: 200px;
+}
+
+.story_text h1{
+    font-family: 'Monster Hunter', sans-serif; ;
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.story_text p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 100;
+}
+
+.promotion{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8) ), url("Assets/gameplay2.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.promo_text{
+    font-weight: 550;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.promo_btn_container{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    z-index: 1;
+    width: 100%;
+}
+
+.promo_button{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 550;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    background:#fff;
+    border: 0;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.5s ease; 
+}
+
+.promo_button:hover{
+    transform: scale(1.4);
+    background-color: black;
+    color: #fff;
+}
+
+
+.town{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    background : url("Assets/bg_page.jpg");
+    padding-bottom: 20px;
+}
+
+
+.town h1{
+    font-family: 'Monster Hunter', sans-serif; ;
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 50px;
+}
+.town_image img{
+    width: 500px;
+}
+
+.town_image_explain{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    font-weight: 100;
+    text-align: justify;
+}
+.town_content{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.map_container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8) ), url("Assets/game_bg.png");
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    padding: 10px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.map_container h1{
+    font-family: 'Monster Hunter', sans-serif; ;
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.map_image img{
+    width: 500px;
+    border-radius: 15px;
+}
+
+.map_text p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    font-weight: 100;
+    text-align: center;
+}
+
+.map_text{
+    text-align: center;
+}
+
+/* SIGN UP HMTL */
+
+.signup_container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8) ), url("Assets/signup_bg.jpg");
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+}
+.signup_form{
+    height: fit-content;
+    padding-top: 50px;
+    background: rgba(red, green, blue, 5);
+    width: 300px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+
+}
+
+.signup_form p{
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.signup_form h1{
+    color: #fff;
+    margin-bottom: 10px;
+    
+}
+
+.input_box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.gender_legend{
+    color: #fff;
+}
+
+.gender_label{
+    color: #fff;
+}
+
+.gender{
+    color: #fff;
+}
+
+.signup_form_btn{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #162d63;   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.signup_form_btn:hover{
+    transform: scale(1.09);
+    background-color: #162d63;
+    color: #fff;
+}
+
+hr{
+    margin-top: 26px;
+    width: 100%;
+}
+
+#error_msg{
+    color: #ca2e2e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+/* GAME HTML */
+
+/* ngatur konten isi */
+.slideshow{
+    background-image : linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8) ), url("Assets/gameplay_bg.png");
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.slideshow h1{
+    font-family: 'Monster Hunter', sans-serif; ;
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+}
+.image_slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.slide{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slide h1{
+    font-family: 'Monster Hunter', sans-serif; ;
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.slide input{
+    display: none;
+}
+
+.slide_image {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide_image img{
+    width: 800px;
+    height: 500px;
+}
+
+.nav_manual{
+    position: absolute;
+    width: 800px;
+    bottom: -10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual_btn{
+    border: 5px solid;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual_btn:hover{
+    background: #162d63;
+}
+.manual_btn:not(:last-child){
+    margin-right: 20px;
+}
+
+#radio1:checked~.first{
+    margin-left: 0;
+}
+
+#radio2:checked~.first{
+    margin-left: -20%;
+}
+#radio3:checked~.first{
+    margin-left: -40%;
+}
+#radio4:checked~.first{
+    margin-left: -60%;
+}
+/* Features */
+.game_image img{
+    width: 700px;
+}
+
+.game_features{
+    margin-top: 60px;
+}
+
+.image_container{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background : url("Assets/bg_page.jpg");
+    gap: 20px;
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+    padding-top: 10px;
+} 
+
+.image_container2{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-image : linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8) ), url("Assets/gameplay_bg.png");
+    gap: 20px;
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+    padding-top: 10px;
+} 
+
+
+.image_explain h1{
+    font-family: 'Monster Hunter', sans-serif; ;
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.image_explain p{
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    font-weight: 100;
+}
+
+
+
+
+/* TOWN HTML */
+.town_container{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background : url("Assets/bg_page.jpg");
+    gap: 20px;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+} 
+
+.town_image img {
+    border-radius: 90px;
+}
+.town_explain h1{
+    font-family: 'Monster Hunter', sans-serif; ;
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+    text-decoration: underline;
+
+}
+
+.town_explain p{
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    font-weight: 100;
+}
+
+/* SUPPORT HTML */
+
+.div_container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8) ), url("Assets/gameplay3.jpg");
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    gap: 50px;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+
+
+.spec_box{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.spec_box_text h1{
+    font-family: 'Monster Hunter', sans-serif; ;
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.spec_box_text p{
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    font-weight: 100;
+}
